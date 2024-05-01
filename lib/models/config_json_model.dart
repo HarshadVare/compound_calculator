@@ -4,18 +4,18 @@
 
 import 'dart:convert';
 
-Data dataFromJson(String str) => Data.fromJson(json.decode(str));
+CalcData dataFromJson(String str) => CalcData.fromJson(json.decode(str));
 
-String dataToJson(Data data) => json.encode(data.toJson());
+String dataToJson(CalcData data) => json.encode(data.toJson());
 
-class Data {
+class CalcData {
   NoOfYears rateOfInterest;
   PrincipalAmt principalAmt;
   NoOfYears timesToCompoundYear;
   NoOfYears noOfYears;
   NoOfYears output;
 
-  Data({
+  CalcData({
     required this.rateOfInterest,
     required this.principalAmt,
     required this.timesToCompoundYear,
@@ -23,7 +23,7 @@ class Data {
     required this.output,
   });
 
-  factory Data.fromJson(Map<String, dynamic> json) => Data(
+  factory CalcData.fromJson(Map<String, dynamic> json) => CalcData(
         rateOfInterest: NoOfYears.fromJson(json["rate_of_interest"]),
         principalAmt: PrincipalAmt.fromJson(json["principal_amt"]),
         timesToCompoundYear: NoOfYears.fromJson(json["times_to_compound_year"]),
