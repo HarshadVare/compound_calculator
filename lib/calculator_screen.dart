@@ -134,7 +134,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                         }
                       } else if (["8", "9", "10", "11", "12"]
                           .contains(controller.defaultRateOfInterest)) {
-                        if (int.parse(pamtController.text) < 750000) {
+                        if (int.parse(pamtController.text) < 75000) {
                           return principalAmt?.minAmt.minErrMsg;
                         }
                       }
