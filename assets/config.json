@@ -1,7 +1,7 @@
 {
     "rate_of_interest": {
-        "text_color": "black",
-        "text_size": 20,
+        "text_color": "0xff000000",
+        "text_size": 15,
         "label_text": "Rate of Interest",
         "options": [
             {
@@ -68,8 +68,8 @@
     },
     "principal_amt": {
         "hint_text": "Principal Amount",
-        "text_color": "black",
-        "text_size": 20,
+        "text_color": "0xff000000",
+        "text_size": 15,
         "min_amt": {
             "upto_3": 10000,
             "upto_7": 50000,
@@ -81,8 +81,8 @@
         "max_err_msg": "Maximum amount should be 1 crore"
     },
     "times_to_compound_year": {
-        "text_color": "black",
-        "text_size": 20,
+        "text_color": "0xff000000",
+        "text_size": 15,
         "label_text": "Number of times to compound in a year",
         "options": [
             {
@@ -96,16 +96,12 @@
             {
                 "label": "Quarterly",
                 "value": "4"
-            },
-            {
-                "label": "all",
-                "value": "all"
             }
         ]
     },
     "no_of_years": {
-        "text_color": "black",
-        "text_size": 20,
+        "text_color": "0xff000000",
+        "text_size": 15,
         "label_text": "Number of Years",
         "options": [
             {
@@ -231,9 +227,9 @@
         ]
     },
     "output": {
-        "text_color": "black",
-        "text_size": 20,
-        "label_text": "",
-        "mode": "snackbar"
+        "text_color": "0xff000000",
+        "text_size": 15,
+        "label_text": "Result",
+        "mode": "dialog"
     }
 }
